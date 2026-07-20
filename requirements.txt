@@ -1,0 +1,24 @@
+# Phụ thuộc trực tiếp của dự án.
+# Cài vào .venv:  uv pip install -r requirements.txt
+#            hoặc: pip install -r requirements.txt
+
+# Tính toán & phân tích số liệu
+numpy
+scipy
+pandas
+
+# Trực quan hoá
+matplotlib
+seaborn
+
+# Kiểm thử
+pytest
+hypothesis
+
+# Thực thi notebook trong test
+nbformat
+nbclient
+ipykernel
+
+# Xuất notebook sang Markdown/Word (export_pipeline.py)
+nbconvert

@@ -1,0 +1,60 @@
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Môi trường ảo
+.venv/
+venv/
+env/
+ENV/
+
+# Đóng gói / phân phối
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# ===== Jupyter Notebook =====
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# ===== Kiểm thử / công cụ =====
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+.hypothesis/
+
+# ===== IDE / Editor =====
+.vscode/
+.idea/
+*.swp
+
+# ===== Hệ điều hành =====
+# Windows
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+# macOS
+.DS_Store
+
+# ===== Dữ liệu / thư mục cục bộ =====
+*.pdf
+*.docx
+/docs
+/export
+/example
+
+# Bỏ comment nếu không muốn commit dữ liệu nặng
+*.zip
+# *.csv
+
+# Cấu hình cục bộ của công cụ soạn thảo (chứa đường dẫn máy cá nhân)
+.claude/
+
+# Sản phẩm kết xuất từ notebook (tái tạo bằng export_pipeline.py) — không theo dõi
+export/

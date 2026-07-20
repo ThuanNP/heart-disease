@@ -1,0 +1,15 @@
+{
+  // Cấu hình cho markdownlint-cli2 (dòng lệnh / CI).
+  // Rule vẫn lấy từ .markdownlint.jsonc (được cli2 tự động merge);
+  // file này chỉ khai báo những đường dẫn KHÔNG lint.
+
+  "ignores": [
+    // Markdown sinh tự động từ notebook (nbconvert) — sản phẩm kết xuất,
+    // không phải tài liệu viết tay nên không kiểm tra.
+    "export/**",
+
+    // Môi trường ảo & cache công cụ (phòng khi lint theo glob rộng như **/*.md).
+    ".venv/**",
+    ".pytest_cache/**"
+  ]
+}

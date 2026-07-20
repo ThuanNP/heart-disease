@@ -1,0 +1,7 @@
+# Bỏ qua các file Markdown sinh tự động từ notebook (nbconvert).
+# Đây là sản phẩm kết xuất, không phải tài liệu viết tay → không lint.
+export/
+
+# Thư mục công cụ / môi trường (phòng khi lint theo glob rộng).
+.venv/
+.pytest_cache/

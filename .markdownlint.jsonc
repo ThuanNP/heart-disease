@@ -1,0 +1,29 @@
+{
+  // Cấu hình markdownlint cho dự án.
+  // Các quy tắc cơ học (khoảng trắng thừa, dòng trống lặp, thụt lề, URL trần...)
+  // đã được sửa trực tiếp trong file. Những quy tắc dưới đây được TẮT vì
+  // xung đột với nội dung tài liệu tham chiếu trong docs/ — vốn được trích
+  // xuất (OCR) từ slide bài giảng và chứa công thức toán.
+
+  "default": true,
+
+  // docs/*.md dùng nhiều <br> để giữ nguyên cách xuống dòng của "picture text"
+  // đã OCR; bỏ HTML nội tuyến sẽ làm hỏng bố cục công thức.
+  "MD033": false,
+
+  // Dòng dài là bản chất của đoạn văn tiếng Việt và khối OCR; không giới hạn.
+  "MD013": false,
+
+  // Tiêu đề slide lặp lại nhiều lần giữa các trang → trùng heading là cố ý.
+  "MD024": false,
+
+  // Nhiều slide mỗi cái là một H1 → cho phép nhiều tiêu đề cấp 1.
+  "MD025": false,
+
+  // OCR dùng **in đậm** làm tiêu đề slide; không ép thành heading thật.
+  "MD036": false,
+
+  // Dấu [ ] trong công thức OCR (vd: [n][1][;n][2]) bị hiểu nhầm là link tham
+  // chiếu — đây là false positive trên nội dung toán, không phải link thật.
+  "MD052": false
+}
